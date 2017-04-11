@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 50)];
+    btn.backgroundColor = [UIColor orangeColor];
+    [btn addTarget:self action:@selector(clickBtn:) forControlEvents:(UIControlEventTouchUpInside)];
+    [btn setTitle:@"点我" forState:(UIControlStateNormal)];
+    [btn setTitleColor:[UIColor whiteColor] forState:(UIControlStateNormal)];
+    [self.view addSubview:btn];
 }
 
 
