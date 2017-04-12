@@ -31,6 +31,13 @@
     label.textColor = [UIColor orangeColor];
     label.font = [UIFont systemFontOfSize:12];
     [self.view addSubview:label];
+    
+    UILabel *label1 = [[UILabel alloc] init];
+    label1.frame = CGRectMake(200,100, 100, 30);
+    label1.text = @"你是";
+    label1.textColor = [UIColor orangeColor];
+    label1.font = [UIFont systemFontOfSize:12];
+    [self.view addSubview:label1];
 }
 
 
